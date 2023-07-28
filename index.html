@@ -3,81 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <title>Real Estate Web-to-Lead Form</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background-color: #f5f5f5;
-    }
-    form {
-      max-width: 400px;
-      margin: 0 auto;
-      padding: 20px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      background-color: #ffffff;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-    label {
-      display: block;
-      margin-bottom: 10px;
-      font-weight: bold;
-    }
-    input[type="text"], input[type="email"] {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    input[type="submit"] {
-      background-color: #3f51b5;
-      color: #fff;
-      padding: 12px 24px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 16px;
-    }
-    input[type="submit"]:hover {
-      background-color: #303f9f;
-    }
-    .form-image {
-      text-align: center;
-    }
-    .form-image img {
-      max-width: 200px;
-      height: auto;
-    }
-  </style>
 </head>
-<body>
-  <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+<body style="font-family: Arial, sans-serif; line-height: 1.6; background-color: #f5f5f5;">
+  <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" style="max-width: 400px; margin: 0 auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px; background-color: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
     <input type="hidden" name="oid" value="00D3x0000021LrX">
 
-    <div class="form-image">
-      <img src="https://via.placeholder.com/200" alt="Real Estate Image">
+    <div style="text-align: center; margin-bottom: 20px;">
+      <img src="https://via.placeholder.com/200" alt="Real Estate Image" style="max-width: 200px; height: auto;">
     </div>
 
     <label for="first_name">First Name</label>
-    <input id="first_name" maxlength="40" name="first_name" type="text" required>
+    <input id="first_name" maxlength="40" name="first_name" type="text" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;">
 
     <label for="last_name">Last Name</label>
-    <input id="last_name" maxlength="80" name="last_name" type="text" required>
+    <input id="last_name" maxlength="80" name="last_name" type="text" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;">
 
     <label for="email">Email</label>
-    <input id="email" maxlength="80" name="email" type="email" required>
+    <input id="email" maxlength="80" name="email" type="email" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;">
 
     <label for="company">Company</label>
-    <input id="company" maxlength="40" name="company" type="text" required>
+    <input id="company" maxlength="40" name="company" type="text" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;">
 
     <label for="city">City</label>
-    <input id="city" maxlength="40" name="city" type="text" required>
+    <input id="city" maxlength="40" name="city" type="text" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;">
 
     <label for="state">State/Province</label>
-    <input id="state" maxlength="20" name="state" type="text" required>
+    <input id="state" maxlength="20" name="state" type="text" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;">
 
-    <input type="submit" name="submit" value="Submit">
+    <input type="submit" name="submit" value="Submit" style="background-color: #3f51b5; color: #fff; padding: 12px 24px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px;">
   </form>
 </body>
 </html>
