@@ -42,7 +42,7 @@
 <body>
   <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
     <input type="hidden" name="oid" value="00D3x0000021LrX">
-    <input type="hidden" name="retURL" value="https://pgmoraes.github.io/teste1/thank_you.html/">
+   
 
     <label for="first_name">First Name</label>
     <input id="first_name" maxlength="40" name="first_name" size="20" type="text" required><br>
@@ -64,5 +64,26 @@
 
     <input type="submit" name="submit" value="Submit">
   </form>
+  <script>
+  // Function to handle form submission
+  function handleFormSubmission(event) {
+    // Prevent the default form submission
+    event.preventDefault();
+
+    // Get the form element
+    const form = event.target;
+
+    // Submit the form data to Salesforce
+    // You may add any additional logic or validation here if needed
+
+    // Redirect to the "Thank You" page after successful submission
+    window.location.href = "https://pgmoraes.io/teste1/thank_you.html";
+  }
+
+  // Attach the form submission handler to the form
+  const form = document.querySelector("form");
+  form.addEventListener("submit", handleFormSubmission);
+</script>
+
 </body>
 </html>
