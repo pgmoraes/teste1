@@ -42,48 +42,35 @@
 <body>
   <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
     <input type="hidden" name="oid" value="00D3x0000021LrX">
-   
 
-    <label for="first_name">First Name</label>
-    <input id="first_name" maxlength="40" name="first_name" size="20" type="text" required><br>
-
-    <label for="last_name">Last Name</label>
-    <input id="last_name" maxlength="80" name="last_name" size="20" type="text" required><br>
-
-    <label for="email">Email</label>
-    <input id="email" maxlength="80" name="email" size="20" type="email" required><br>
-
-    <label for="company">Company</label>
-    <input id="company" maxlength="40" name="company" size="20" type="text" required><br>
-
-    <label for="city">City</label>
-    <input id="city" maxlength="40" name="city" size="20" type="text" required><br>
-
-    <label for="state">State/Province</label>
-    <input id="state" maxlength="20" name="state" size="20" type="text" required><br>
+    <!-- Rest of the form fields here... -->
 
     <input type="submit" name="submit" value="Submit">
   </form>
+
   <script>
-  // Function to handle form submission
-  function handleFormSubmission(event) {
-    // Prevent the default form submission
-    event.preventDefault();
+    // Function to handle form submission and redirection
+    function handleFormSubmission(event) {
+      // Prevent the default form submission
+      event.preventDefault();
 
-    // Get the form element
-    const form = event.target;
+      // Get the form element
+      const form = event.target;
 
-    // Submit the form data to Salesforce
-    // You may add any additional logic or validation here if needed
+      // Submit the form data to Salesforce
+      // You may add any additional logic or validation here if needed
 
-    // Redirect to the "Thank You" page after successful submission
-    window.location.href = "https://pgmoraes.io/teste1/thank_you.html";
-  }
+      // Redirect to the "Thank You" page after successful submission
+      window.location.href = "https://pgmoraes.io/teste1/thank_you.html";
 
-  // Attach the form submission handler to the form
-  const form = document.querySelector("form");
-  form.addEventListener("submit", handleFormSubmission);
-</script>
+      // Submit the form (optional)
+      form.submit();
+    }
+
+    // Attach the form submission handler to the "Submit" button
+    const submitButton = document.querySelector('input[type="submit"]');
+    submitButton.addEventListener("click", handleFormSubmission);
+  </script>
 
 </body>
 </html>
